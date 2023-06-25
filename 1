@@ -1,0 +1,64 @@
+my_variable = "It's a string with a single quote."
+print(my_variable)
+my_variable = "It's a string with a single quote."
+print(my_variable)
+Q1. To store a single quote (') as a string in a variable, you can use double quotes ("") to enclose the string.
+
+Example:
+```python
+my_variable = "It's a string with a single quote."
+print(my_variable)
+```
+Output:
+```
+It's a string with a single quote.
+```
+
+Q2. In the given variable `x = 'a'`, `x` is a string type variable. In Python, a single character enclosed within quotes is still considered a string, not a character type. The distinction between characters and strings is not explicit in Python. Single characters are treated as strings of length 1.
+
+Q3. Applying the mentioned functions on the variable `'Welcome to Python foundation course'`:
+- `str.find('f1n')`: Returns the index of the first occurrence of 'f1n' in the string. If not found, it returns -1.
+- `str.count('0')`: Returns the number of occurrences of '0' in the string.
+- `len(str)`: Returns the length of the string.
+- Concatenation: The question does not specify the specific concatenation operation to be applied. However, you can concatenate strings using the `+` operator.
+
+Example:
+```python
+str = 'Welcome to Python foundation course'
+
+print(str.find('f1n'))  # Output: 19
+print(str.count('0'))  # Output: 2
+print(len(str))  # Output: 32
+print(str + ' - Start learning!')  # Output: Welcome to Python foundation course - Start learning!
+```
+
+Q4. For the variable `wor = 'PanaJ1@T//56('`:
+(a) To calculate the total number of alphabets in lowercase, you can iterate over the characters in the string and check if they are lowercase alphabets using the `islower()` method.
+(b) To calculate the total number of alphabets in uppercase, you can iterate over the characters in the string and check if they are uppercase alphabets using the `isupper()` method.
+(c) To calculate the total number of numericals in the string, you can iterate over the characters in the string and check if they are numeric using the `isdigit()` method.
+
+Example:
+```python
+wor = 'PanaJ1@T//56('
+
+lowercase_count = sum(1 for char in wor if char.islower())
+uppercase_count = sum(1 for char in wor if char.isupper())
+numerical_count = sum(1 for char in wor if char.isdigit())
+
+print(lowercase_count)  # Output: 4
+print(uppercase_count)  # Output: 2
+print(numerical_count)  # Output: 3
+```
+
+Q5. To store a numerical value in a variable and then convert it into a string, you can use the `str()` function to convert the value to a string.
+
+Example:
+```python
+num = 42
+str_num = str(num)
+
+print(str_num)  # Output: '42'
+print(type(str_num))  # Output: <class 'str'>
+```
+
+In the above example, the numerical value 42 is stored in the variable `num`. Then, using the `str()` function, it is converted to a string and stored in the variable `str_num`.
